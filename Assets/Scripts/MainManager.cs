@@ -12,7 +12,7 @@ public class MainManager : MonoBehaviour
     {
         if (Instance != null)
         {
-            Destroy(Instance);
+            Destroy(gameObject);
             return;
         }
         Instance = this;
