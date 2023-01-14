@@ -23,16 +23,18 @@ public class MenuUIScriptRe : MonoBehaviour
     {
         
     }
-    public void StartGame()
-    {
-        SceneManager.LoadScene(1);
-
-    }
+    
+    
 
 
     public void SaveName()
     {
         playerName = inputField.text;
-        MainManager.Instance.playerName = playerName;
+        GameManager.Instance.playerName = playerName;
+    }
+
+    public void StartGameDos()
+    {
+        GameManager.Instance.StartGame();
     }
 }
